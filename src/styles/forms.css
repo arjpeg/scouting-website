@@ -1,0 +1,119 @@
+/* Form elements and inputs */
+
+.label {
+    font-weight: 600;
+    color: #d6e2f2;
+}
+
+label.stack,
+label span {
+    display: grid;
+    gap: 6px;
+    color: #d6e2f2;
+    font-weight: 600;
+}
+
+select,
+input[type='number'],
+input[type='text'] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.05);
+    color: #f8fbff;
+}
+
+.team-input {
+    max-width: 140px;
+}
+
+.pill-group {
+    display: inline-flex;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+}
+
+.pill {
+    background: transparent;
+    color: #f8fbff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+}
+
+.pill-active {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.fields {
+    display: grid;
+    gap: 8px;
+}
+
+.phase-section {
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.phase-title {
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+
+.assignment-controls {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.assignment-controls select,
+.assignment-controls button {
+    min-width: 100px;
+}
+
+/* Form group for labeled inputs */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group.compact {
+    gap: 4px;
+}
+
+.form-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #d6e2f2;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.85;
+}
+
+.form-group select,
+.form-group input {
+    margin: 0;
+}
+
+.form-group select:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Border color for subtle borders */
+:root {
+    --border-subtle: rgba(255, 255, 255, 0.06);
+}
